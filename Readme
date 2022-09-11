@@ -1,0 +1,23 @@
+This is Kartik's readme file
+----------------------------
+
+The shell can now also use basic line editor commands.
+
+1. The arrow keys can be used to move the cursor around and allow for 
+   inserting text at any position that isn't out of bounds
+
+2. The up and down keys go through the history of commands that were used. 
+   If the user is on the last command and presses down it will just go to a blank line
+
+3. The ctrl a key goes to the start of the line and the ctrl e key will go to the end
+
+4. The ctrl d (delete) key will delete the character at the cursor position
+
+5. The ctrl h (backspace) key delete the character to the left of the cursor
+
+6. Basic path substitution has also been implemented. 
+   If there is a char before the cursor (or group of chars) 
+   it will either put the only result that matches in the line
+   or the common preceding substring of all the results. It however
+   doesn't check if the word is an argument or a command like regular
+   bash does. AKA typing vi and then tab won't result in vim  
